@@ -331,22 +331,26 @@ section{padding:76px 0}.statement{padding:30px}.statement p{font-size:28px}
       <h2>Book a free consultation.</h2>
       <p class="lead" style="margin-top:24px">Share the student’s background, goals, target countries, and timeline. We will recommend the right level of support and provide a quote after the call.</p>
     </div>
-    <form onsubmit="event.preventDefault();document.getElementById('note').innerText='Thank you. Before launch, connect this form to email, Google Sheets, HubSpot, Calendly, or WhatsApp.';">
+    <form action="https://formsubmit.co/raakin0005@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New Qasr Advisory inquiry">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://qasr-advisory-git-main-qasradv.vercel.app/?submitted=true#consultation">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <div class="fields">
-        <label>Name<input required placeholder="Parent or student name"></label>
-        <label>WhatsApp<input required placeholder="+966 / +974 / +971 ..."></label>
+        <label>Name<input name="Name" required placeholder="Parent or student name"></label>
+        <label>WhatsApp<input name="WhatsApp" required placeholder="+966 / +974 / +971 ..."></label>
       </div>
       <div class="fields">
-        <label>Email<input type="email" required placeholder="email@example.com"></label>
-        <label>Country<select required><option value="">Select</option><option>Saudi Arabia</option><option>Qatar</option><option>United Arab Emirates</option><option>Kuwait</option><option>Bahrain</option><option>Oman</option><option>Pakistan</option><option>Other</option></select></label>
+        <label>Email<input name="email" type="email" required placeholder="email@example.com"></label>
+        <label>Country<select name="Country" required><option value="">Select</option><option>Saudi Arabia</option><option>Qatar</option><option>United Arab Emirates</option><option>Kuwait</option><option>Bahrain</option><option>Oman</option><option>Pakistan</option><option>Other</option></select></label>
       </div>
       <div class="fields">
-        <label>Student Level<select required><option value="">Select</option><option>Early planning</option><option>Undergraduate applicant</option><option>Master’s applicant</option><option>Transfer / gap year</option></select></label>
-        <label>Target Region<select required><option value="">Select</option><option>United States</option><option>United Kingdom</option><option>Europe</option><option>Malaysia</option><option>Turkey</option><option>Netherlands</option><option>China</option><option>Qatar</option><option>Multiple destinations</option><option>Not sure yet</option></select></label>
+        <label>Student Level<select name="Student Level" required><option value="">Select</option><option>Early planning</option><option>Undergraduate applicant</option><option>Master’s applicant</option><option>Transfer / gap year</option></select></label>
+        <label>Target Region<select name="Target Region" required><option value="">Select</option><option>United States</option><option>United Kingdom</option><option>Europe</option><option>Malaysia</option><option>Turkey</option><option>Netherlands</option><option>China</option><option>Qatar</option><option>Multiple destinations</option><option>Not sure yet</option></select></label>
       </div>
-      <label>Tell us briefly about your goals<textarea placeholder="Target universities, curriculum, grades, timeline, and support needed."></textarea></label>
+      <label>Tell us briefly about your goals<textarea name="Goals" placeholder="Target universities, curriculum, grades, timeline, and support needed."></textarea></label>
       <button class="btn primary" type="submit">Submit Inquiry</button>
-      <p id="note" style="color:var(--muted);font-size:13px"></p>
+      <p id="note" style="color:var(--muted);font-size:13px">Your information will only be used to respond to your inquiry.</p>
     </form>
   </div>
 </section>
@@ -360,5 +364,10 @@ section{padding:76px 0}.statement{padding:30px}.statement p{font-size:28px}
 
 <a class="whatsapp" href="https://wa.me/12679870869?text=Hello%20Qasr%20Advisory%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20admissions%20services." target="_blank" rel="noopener" aria-label="Chat with Qasr Advisory on WhatsApp">WhatsApp Inquiry</a>
 
+  <script>
+    if (new URLSearchParams(window.location.search).get('submitted') === 'true') {
+      document.getElementById('note').textContent = 'Thank you. Your inquiry has been sent to Qasr Advisory.';
+    }
+  </script>
 </body>
 </html>
