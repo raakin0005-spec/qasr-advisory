@@ -59,8 +59,9 @@ section{padding:100px 0}
 .logo-wall{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .logo-card{min-height:190px;border:1px solid rgba(199,160,77,.18);border-radius:24px;background:radial-gradient(circle at 50% 0%,rgba(199,160,77,.16),transparent 42%),linear-gradient(180deg,rgba(21,18,14,.96),rgba(8,7,6,.96));display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:22px;transition:.25s}
 .logo-card:hover{transform:translateY(-5px);border-color:rgba(199,160,77,.5)}
-.logo-mark{width:76px;height:76px;border-radius:18px;background:#fff;display:grid;place-items:center;padding:10px;margin-bottom:15px;box-shadow:0 12px 30px rgba(0,0,0,.28)}
+.logo-mark{width:76px;height:76px;border-radius:18px;background:#fff;display:grid;place-items:center;padding:10px;margin-bottom:15px;box-shadow:0 12px 30px rgba(0,0,0,.28);overflow:hidden}
 .logo-mark img{display:block;width:100%;height:100%;object-fit:contain}
+.logo-mark img.union-logo{width:200%;max-width:none;object-fit:fill;justify-self:start}
 .wordmark{font-family:Georgia,serif;font-size:23px;letter-spacing:-.035em;margin-bottom:7px}
 .logo-card p{margin:0;color:var(--muted);font-size:13px}
 .acceptance-disclaimer{max-width:840px;margin:28px auto 0;color:var(--muted);font-size:12px;text-align:center}
@@ -179,7 +180,7 @@ section{padding:76px 0}.statement{padding:30px}.statement p{font-size:28px}
         <article class="logo-card"><div class="logo-mark"><img src="assets/universities/northeastern.png" alt="Northeastern University logo" width="144" height="144" loading="lazy" /></div><div class="wordmark">Northeastern</div><p>Northeastern University</p></article>
         <article class="logo-card"><div class="logo-mark"><img src="assets/universities/minerva.png" alt="Minerva University logo" width="256" height="256" loading="lazy" /></div><div class="wordmark">Minerva</div><p>Minerva University</p></article>
         <article class="logo-card"><div class="logo-mark"><img src="assets/universities/miami.svg" alt="University of Miami logo" width="250" height="120" loading="lazy" /></div><div class="wordmark">Miami</div><p>University of Miami</p></article>
-        <article class="logo-card"><div class="logo-mark"><img src="assets/universities/union.png" alt="Union College logo" width="48" height="48" loading="lazy" /></div><div class="wordmark">Union</div><p>Union College</p></article>
+        <article class="logo-card"><div class="logo-mark"><img class="union-logo" src="assets/universities/union.png" alt="Union College logo" width="500" height="250" loading="eager" /></div><div class="wordmark">Union</div><p>Union College</p></article>
         <article class="logo-card"><div class="logo-mark"><img src="assets/universities/denison.png" alt="Denison University logo" width="256" height="256" loading="lazy" /></div><div class="wordmark">Denison</div><p>Denison University</p></article>
         <article class="logo-card"><div class="logo-mark"><img src="assets/universities/case-western.png" alt="Case Western Reserve University logo" width="48" height="48" loading="lazy" /></div><div class="wordmark">Case Western</div><p>Case Western Reserve University</p></article>
       </div>
@@ -192,7 +193,7 @@ section{padding:76px 0}.statement{padding:30px}.statement p{font-size:28px}
         <article class="logo-card"><div class="logo-mark"><img src="assets/universities/imperial.png" alt="Imperial College London logo" width="256" height="256" loading="lazy" /></div><div class="wordmark">Imperial</div><p>Imperial College London</p></article>
         <article class="logo-card"><div class="logo-mark"><img src="assets/universities/lse.png" alt="London School of Economics logo" width="180" height="180" loading="lazy" /></div><div class="wordmark">LSE</div><p>London School of Economics</p></article>
         <article class="logo-card"><div class="logo-mark"><img src="assets/universities/ucl.png" alt="University College London logo" width="256" height="256" loading="lazy" /></div><div class="wordmark">UCL</div><p>University College London</p></article>
-        <article class="logo-card"><div class="logo-mark"><img src="assets/universities/kcl.png" alt="King’s College London logo" width="32" height="32" loading="lazy" /></div><div class="wordmark">King’s College London</div><p>King’s College London</p></article>
+        <article class="logo-card"><div class="logo-mark"><img src="assets/universities/kcl.webp" alt="King’s College London logo" width="501" height="378" loading="eager" /></div><div class="wordmark">King’s College London</div><p>King’s College London</p></article>
       </div>
     </div>
 
