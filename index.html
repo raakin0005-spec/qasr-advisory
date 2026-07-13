@@ -57,10 +57,13 @@ section{padding:100px 0}
 .region-title{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--soft);padding-bottom:14px;margin-bottom:18px}
 .region-title span{color:var(--gold2);font-size:12px;letter-spacing:.18em;text-transform:uppercase}
 .logo-wall{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.logo-card{min-height:145px;border:1px solid rgba(199,160,77,.18);border-radius:24px;background:radial-gradient(circle at 50% 0%,rgba(199,160,77,.16),transparent 42%),linear-gradient(180deg,rgba(21,18,14,.96),rgba(8,7,6,.96));display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:22px;transition:.25s}
+.logo-card{min-height:190px;border:1px solid rgba(199,160,77,.18);border-radius:24px;background:radial-gradient(circle at 50% 0%,rgba(199,160,77,.16),transparent 42%),linear-gradient(180deg,rgba(21,18,14,.96),rgba(8,7,6,.96));display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:22px;transition:.25s}
 .logo-card:hover{transform:translateY(-5px);border-color:rgba(199,160,77,.5)}
-.wordmark{font-family:Georgia,serif;font-size:27px;letter-spacing:-.045em;margin-bottom:13px}
+.logo-mark{width:76px;height:76px;border-radius:18px;background:#fff;display:grid;place-items:center;padding:10px;margin-bottom:15px;box-shadow:0 12px 30px rgba(0,0,0,.28)}
+.logo-mark img{display:block;width:100%;height:100%;object-fit:contain}
+.wordmark{font-family:Georgia,serif;font-size:23px;letter-spacing:-.035em;margin-bottom:7px}
 .logo-card p{margin:0;color:var(--muted);font-size:13px}
+.acceptance-disclaimer{max-width:840px;margin:28px auto 0;color:var(--muted);font-size:12px;text-align:center}
 .dest-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .dest{border:1px solid var(--soft);border-radius:24px;background:rgba(255,255,255,.035);padding:26px;min-height:150px}
 .dest b{font-family:Georgia,serif;font-size:28px;font-weight:400;display:block;margin-bottom:8px}
@@ -71,7 +74,12 @@ section{padding:100px 0}
 .num{color:var(--gold2);font-family:Georgia,serif;font-size:22px;margin-bottom:52px}
 .service p,.package p,.package li,.founder p,.insight p{color:var(--muted);font-size:15px}
 .founders{grid-template-columns:repeat(2,1fr)}
-.founder{min-height:430px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(to top,rgba(5,5,5,.94),rgba(5,5,5,.18)),radial-gradient(circle at 30% 20%,rgba(199,160,77,.15),transparent 34%),var(--panel)}
+.founder{min-height:520px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;background:radial-gradient(circle at 50% 18%,rgba(199,160,77,.18),transparent 38%),linear-gradient(160deg,rgba(29,23,16,.76),rgba(8,7,6,.98))}
+.founder-photo{width:250px;height:250px;object-fit:cover;border-radius:50%;border:1px solid rgba(229,200,117,.55);box-shadow:0 24px 60px rgba(0,0,0,.38);margin:4px 0 30px;filter:saturate(.92) contrast(1.03)}
+.founder-photo.ayesha{object-position:center 42%}
+.founder-photo.raakin{object-position:center 32%}
+.founder h3{margin-bottom:14px}
+.founder p{max-width:470px;margin:0}
 .tag{color:var(--gold2);text-transform:uppercase;letter-spacing:.18em;font-size:11px;font-weight:700;margin-bottom:16px}
 .price{font-family:Georgia,serif;font-size:44px;color:var(--gold2);margin:15px 0 5px}
 .featured{border-color:rgba(199,160,77,.54);background:linear-gradient(160deg,rgba(50,38,18,.85),rgba(10,9,8,.98))}
@@ -99,6 +107,7 @@ textarea{min-height:126px}
 .container{width:min(100% - 28px,1180px)}h1{font-size:48px}h2{font-size:40px}
 .fields{grid-template-columns:1fr}.actions{flex-direction:column}.btn{width:100%}
 section{padding:76px 0}.statement{padding:30px}.statement p{font-size:28px}
+.founder{min-height:0;padding:28px 24px 32px}.founder-photo{width:210px;height:210px;margin-bottom:26px}
 .footer-inner{flex-direction:column}
 }
 </style>
@@ -161,31 +170,33 @@ section{padding:76px 0}.statement{padding:30px}.statement p{font-size:28px}
     <div class="region">
       <div class="region-title"><h3>United States</h3><span>Selected acceptances</span></div>
       <div class="logo-wall">
-        <article class="logo-card"><div class="wordmark">UPenn</div><p>University of Pennsylvania</p></article>
-        <article class="logo-card"><div class="wordmark">Cornell</div><p>Cornell University</p></article>
-        <article class="logo-card"><div class="wordmark">Duke</div><p>Duke University</p></article>
-        <article class="logo-card"><div class="wordmark">CMU</div><p>Carnegie Mellon University</p></article>
-        <article class="logo-card"><div class="wordmark">Swarthmore</div><p>Swarthmore College</p></article>
-        <article class="logo-card"><div class="wordmark">Northwestern</div><p>Northwestern University</p></article>
-        <article class="logo-card"><div class="wordmark">Northeastern</div><p>Northeastern University</p></article>
-        <article class="logo-card"><div class="wordmark">Minerva</div><p>Minerva University</p></article>
-        <article class="logo-card"><div class="wordmark">Miami</div><p>University of Miami</p></article>
-        <article class="logo-card"><div class="wordmark">Union</div><p>Union College</p></article>
-        <article class="logo-card"><div class="wordmark">Denison</div><p>Denison University</p></article>
-        <article class="logo-card"><div class="wordmark">Case Western</div><p>Case Western Reserve University</p></article>
+        <article class="logo-card"><div class="logo-mark"><img src="assets/universities/upenn.png" alt="University of Pennsylvania logo" width="229" height="256" loading="lazy" /></div><div class="wordmark">Penn</div><p>University of Pennsylvania</p></article>
+        <article class="logo-card"><div class="logo-mark"><img src="assets/universities/cornell.png" alt="Cornell University logo" width="256" height="256" loading="lazy" /></div><div class="wordmark">Cornell</div><p>Cornell University</p></article>
+        <article class="logo-card"><div class="logo-mark"><img src="assets/universities/duke.png" alt="Duke University logo" width="192" height="192" loading="lazy" /></div><div class="wordmark">Duke</div><p>Duke University</p></article>
+        <article class="logo-card"><div class="logo-mark"><img src="assets/universities/cmu.png" alt="Carnegie Mellon University logo" width="48" height="48" loading="lazy" /></div><div class="wordmark">Carnegie Mellon</div><p>Carnegie Mellon University</p></article>
+        <article class="logo-card"><div class="logo-mark"><img src="assets/universities/swarthmore.png" alt="Swarthmore College logo" width="180" height="180" loading="lazy" /></div><div class="wordmark">Swarthmore</div><p>Swarthmore College</p></article>
+        <article class="logo-card"><div class="logo-mark"><img src="assets/universities/northwestern.png" alt="Northwestern University logo" width="180" height="180" loading="lazy" /></div><div class="wordmark">Northwestern</div><p>Northwestern University</p></article>
+        <article class="logo-card"><div class="logo-mark"><img src="assets/universities/northeastern.png" alt="Northeastern University logo" width="144" height="144" loading="lazy" /></div><div class="wordmark">Northeastern</div><p>Northeastern University</p></article>
+        <article class="logo-card"><div class="logo-mark"><img src="assets/universities/minerva.png" alt="Minerva University logo" width="256" height="256" loading="lazy" /></div><div class="wordmark">Minerva</div><p>Minerva University</p></article>
+        <article class="logo-card"><div class="logo-mark"><img src="assets/universities/miami.svg" alt="University of Miami logo" width="250" height="120" loading="lazy" /></div><div class="wordmark">Miami</div><p>University of Miami</p></article>
+        <article class="logo-card"><div class="logo-mark"><img src="assets/universities/union.png" alt="Union College logo" width="48" height="48" loading="lazy" /></div><div class="wordmark">Union</div><p>Union College</p></article>
+        <article class="logo-card"><div class="logo-mark"><img src="assets/universities/denison.png" alt="Denison University logo" width="256" height="256" loading="lazy" /></div><div class="wordmark">Denison</div><p>Denison University</p></article>
+        <article class="logo-card"><div class="logo-mark"><img src="assets/universities/case-western.png" alt="Case Western Reserve University logo" width="48" height="48" loading="lazy" /></div><div class="wordmark">Case Western</div><p>Case Western Reserve University</p></article>
       </div>
     </div>
 
     <div class="region">
       <div class="region-title"><h3>United Kingdom</h3><span>Selected acceptances</span></div>
       <div class="logo-wall">
-        <article class="logo-card"><div class="wordmark">Oxford</div><p>University of Oxford</p></article>
-        <article class="logo-card"><div class="wordmark">Imperial</div><p>Imperial College London</p></article>
-        <article class="logo-card"><div class="wordmark">LSE</div><p>London School of Economics</p></article>
-        <article class="logo-card"><div class="wordmark">UCL</div><p>University College London</p></article>
-        <article class="logo-card"><div class="wordmark">KCL</div><p>King’s College London</p></article>
+        <article class="logo-card"><div class="logo-mark"><img src="assets/universities/oxford.png" alt="University of Oxford logo" width="256" height="256" loading="lazy" /></div><div class="wordmark">Oxford</div><p>University of Oxford</p></article>
+        <article class="logo-card"><div class="logo-mark"><img src="assets/universities/imperial.png" alt="Imperial College London logo" width="256" height="256" loading="lazy" /></div><div class="wordmark">Imperial</div><p>Imperial College London</p></article>
+        <article class="logo-card"><div class="logo-mark"><img src="assets/universities/lse.png" alt="London School of Economics logo" width="180" height="180" loading="lazy" /></div><div class="wordmark">LSE</div><p>London School of Economics</p></article>
+        <article class="logo-card"><div class="logo-mark"><img src="assets/universities/ucl.png" alt="University College London logo" width="256" height="256" loading="lazy" /></div><div class="wordmark">UCL</div><p>University College London</p></article>
+        <article class="logo-card"><div class="logo-mark"><img src="assets/universities/kcl.png" alt="King’s College London logo" width="32" height="32" loading="lazy" /></div><div class="wordmark">King’s College London</div><p>King’s College London</p></article>
       </div>
     </div>
+
+    <p class="acceptance-disclaimer">University names and marks are shown solely to identify institutions associated with stated acceptance results. Qasr Advisory is not affiliated with or endorsed by these institutions.</p>
   </div>
 </section>
 
@@ -235,12 +246,14 @@ section{padding:76px 0}.statement{padding:30px}.statement p{font-size:28px}
     </div>
     <div class="founders">
       <article class="founder">
+        <img class="founder-photo ayesha" src="assets/ayesha-waheed.jpg" alt="Ayesha Waheed, Senior College Counselor at Qasr Advisory" width="970" height="842" loading="lazy" />
         <div class="tag">Senior College Counselor</div>
         <h3>Ayesha Waheed</h3>
         <p>With 10+ years of experience in college counseling, Ayesha helps students and families move from uncertainty to a clear admissions plan across university selection, essays, application strategy, and family guidance.</p>
       </article>
       <article class="founder">
-        <div class="tag">Wharton • Essay & Profile Strategy</div>
+        <img class="founder-photo raakin" src="assets/raakin-ali-shah.jpg" alt="Raakin Ali Shah, Essay and Profile Strategy Advisor at Qasr Advisory" width="870" height="1010" loading="lazy" />
+        <div class="tag">Wharton • Essay &amp; Profile Strategy</div>
         <h3>Raakin Ali Shah</h3>
         <p>A Wharton student at the University of Pennsylvania, Raakin supports students with essay development, personal storytelling, leadership positioning, and building a profile that communicates ambition with clarity.</p>
       </article>
