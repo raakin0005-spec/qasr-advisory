@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://qasr-advisory.vercel.app/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url><loc>https://qasr-advisory.vercel.app/ar.html</loc><lastmod>2026-07-14</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://qasr-advisory.vercel.app/services.html</loc><lastmod>2026-07-14</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://qasr-advisory.vercel.app/ar.html</loc><lastmod>2026-07-22</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://qasr-advisory.vercel.app/services.html</loc><lastmod>2026-07-22</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://qasr-advisory.vercel.app/undergraduate-admissions.html</loc><lastmod>2026-07-14</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://qasr-advisory.vercel.app/masters-admissions.html</loc><lastmod>2026-07-14</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://qasr-advisory.vercel.app/about.html</loc><lastmod>2026-07-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://qasr-advisory.vercel.app/blogs.html</loc><lastmod>2026-07-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://qasr-advisory.vercel.app/faq.html</loc><lastmod>2026-07-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://qasr-advisory.vercel.app/blogs.html</loc><lastmod>2026-07-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://qasr-advisory.vercel.app/faq.html</loc><lastmod>2026-07-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://qasr-advisory.vercel.app/saudi-arabia-university-admissions-consultant.html</loc><lastmod>2026-07-22</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://qasr-advisory.vercel.app/qatar-university-admissions-consultant.html</loc><lastmod>2026-07-22</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://qasr-advisory.vercel.app/common-app-consultant-gcc.html</loc><lastmod>2026-07-22</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://qasr-advisory.vercel.app/ucas-consultant-gcc.html</loc><lastmod>2026-07-22</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://qasr-advisory.vercel.app/university-profile-building.html</loc><lastmod>2026-07-22</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url>
     <loc>https://qasr-advisory.vercel.app/insights/us-university-admissions-gcc-students.html</loc>
     <lastmod>2026-07-14</lastmod>
